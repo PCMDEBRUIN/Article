@@ -42,6 +42,16 @@ df = pd.DataFrame({'incidents': x_data, 'time': r_data})
 df.to_excel(os.path.join(output_dir, f'simulated incidents and time {time_str}.xlsx'))
 print(df)
 
+# alternative: load data
+# df = pd.read_excel('/Users/patricia/Documents/Mathematical Sciences/Research Thesis/Artikel/Output/20220909-114646/simulated incidents and time 20220909-114646.xlsx')
+# x = df['incidents'].to_numpy()
+# x_data = np.squeeze(x)
+
+# r = df['time'].to_numpy()
+# r_data = np.squeeze(r)
+
+# n = len(x_data)
+
 niter = 1000
 chains = 4
 
